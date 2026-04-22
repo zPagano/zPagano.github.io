@@ -1,0 +1,21 @@
+﻿@inherits LayoutComponentBase
+
+<div class="app-wrapper @ThemeClass">
+    <NavMenu IsDarkMode="isDarkMode" OnThemeToggled="ToggleTheme" />
+    
+    <main class="app-viewport">
+        @Body
+    </main>
+</div>
+
+@code {
+    private bool isDarkMode = false;
+    
+    // Dynamically assigns the CSS class based on the boolean state
+    private string ThemeClass => isDarkMode ? "dark-theme" : "light-theme";
+
+    private void ToggleTheme()
+    {
+        isDarkMode = !isDarkMode;
+    }
+}
