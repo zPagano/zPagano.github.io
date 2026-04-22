@@ -26,6 +26,12 @@
     padding: 0;
 }
 
+/* PATCH: Suppress browser focus rings on programmatically focused headings */
+h1:focus, h2:focus, h3:focus {
+    outline: none;
+}
+
+
 .app-wrapper {
     background-color: var(--bg-color);
     color: var(--text-color);
