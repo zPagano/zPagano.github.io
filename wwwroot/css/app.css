@@ -26,18 +26,10 @@
     padding: 0;
 }
 
-<<<<<<< HEAD
-=======
-/* PATCH: Suppress browser focus rings on programmatically focused headings */
->>>>>>> 9aa58cd78effbe81381c109ccbeff119a6aa6005
 h1:focus, h2:focus, h3:focus {
     outline: none;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 9aa58cd78effbe81381c109ccbeff119a6aa6005
 .app-wrapper {
     background-color: var(--bg-color);
     color: var(--text-color);
